@@ -10,7 +10,7 @@ import lombok.Getter;
 public class MyException extends RuntimeException{
     private MyExceptionEnum exceptionEnum;
     private String msg;
-    private int code;
+    private int code ;
 
     public MyException(MyExceptionEnum exceptionEnum){
         this.code = exceptionEnum.getCode();
